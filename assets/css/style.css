@@ -216,7 +216,9 @@ a.hoverline:hover {
   position: relative;
   top: 2px;
 }
-
+small {
+  display: none;
+}
 @media only screen and (max-width : 992px) {
   header, main, footer {
     padding-left: 0;
