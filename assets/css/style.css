@@ -205,6 +205,12 @@ a.hoverline:hover {
 .teal {
   background-color: #006696 !important;
 }
+nav.hide-on-large.only.trigger {
+  display: block;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
 
 #contact a:not(.btn-floating) {
   bottom: 6px;
@@ -216,10 +222,8 @@ a.hoverline:hover {
   position: relative;
   top: 2px;
 }
-small {
-  display: none;
-}
-@media (max-width : 992px) {
+
+@media only screen and (max-width : 992px) {
   header, main, footer {
     padding-left: 0;
   }
@@ -240,12 +244,5 @@ small {
     text-align: center;
     margin: 0 auto;
   }
-  nav.hide-on-large.only.trigger {
-    display: block;
-    position: fixed;
-    top: 0;
-    z-index: 2;
-  }
-
 }
 
